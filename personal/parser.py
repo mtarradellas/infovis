@@ -15,5 +15,6 @@ with open('parsed-history.csv', 'w') as output:
         month = int(i["time"][5:7]);
         if (month > 2):
             artist = i["subtitles"][0]["name"][:-8] if i["subtitles"][0]["name"][-8:] == " - Topic" else i["subtitles"][0]["name"]
-            print(f'{i["title"][8:]};{artist};{i["time"]}');
+            date = f'{i["time"][5:7]}/{i["time"][8:10]}/{i["time"][0:4]}'
+            print(f'{i["title"][8:]};{artist};{date}');
 sys.stdout = stdout
