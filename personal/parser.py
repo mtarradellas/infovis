@@ -12,7 +12,7 @@ music_history_list: list = [item for item in full_history_list if item['header']
 
 songs_missing = list()
 stdout = sys.stdout
-with open('parsed-history.csv', 'w') as output:
+with open('dataset/parsed-history.csv', 'w') as output:
     sys.stdout = output
     print("Title;Artist;Date;Genre;Duration")
     for i in music_history_list:

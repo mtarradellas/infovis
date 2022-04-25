@@ -10,7 +10,7 @@ with open('dateindex.json', 'r') as f:
 data_list: list = [dict() for i in range (0, TOTAL_DATES)]
 artist_list = list()
 
-with open('parsed-history.csv', newline='') as csvfile:
+with open('dataset/parsed-history.csv', newline='') as csvfile:
     reader = csv.reader(csvfile, delimiter=';')
     for row in reader:
         artist: str = row[1]
