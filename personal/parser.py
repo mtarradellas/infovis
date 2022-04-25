@@ -14,6 +14,7 @@ songs_missing = list()
 stdout = sys.stdout
 with open('parsed-history.csv', 'w') as output:
     sys.stdout = output
+    print("Title;Artist;Date;Genre;Duration")
     for i in music_history_list:
         month = int(i["time"][5:7]);
         if (month > 2):
