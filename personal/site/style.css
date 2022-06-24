@@ -1,3 +1,22 @@
-#violin {
-    max-width: 100%;
+body {
+    background-color: rgb(236, 230, 222);
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+.links {
+    text-align: center;
+}
+
+hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.tableauPlaceholder {
+    margin: 0 auto
 }
